@@ -327,40 +327,129 @@
             }
         }
         
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .page {
-                padding: 1.5rem;
-            }
-            
-            h1 {
-                font-size: 2rem;
-            }
-            
-            h2 {
-                font-size: 1.5rem;
-            }
-            
-            .logo-bottom {
-                max-width: 100px;
-                bottom: 1rem;
-                right: 1rem;
-            }
-            
-            .save-button {
-                bottom: 1rem;
-                left: 1rem;
-                padding: 0.75rem 1.5rem;
-            }
-            
-            table {
-                font-size: 0.875rem;
-            }
-            
-            td, th {
-                padding: 0.5rem;
-            }
-        }
+       /* Responsive Design */
+@media (max-width: 768px) {
+    .page {
+        padding: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .logo-bottom {
+        max-width: 100px;
+        bottom: 1rem;
+        right: 1rem;
+    }
+    
+    .save-button {
+        bottom: 1rem;
+        left: 1rem;
+        padding: 0.75rem 1.5rem;
+    }
+    
+    table {
+        font-size: 0.875rem;
+    }
+    
+    td, th {
+        padding: 0.5rem;
+    }
+    
+    .nav-item {
+        padding: 1rem;
+    }
+    
+    .nav-icon {
+        font-size: 2rem;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .nav-item h3 {
+        font-size: 1.1rem;
+    }
+    
+    .nav-item p {
+        font-size: 0.85rem;
+    }
+}
+    /* Navigation Styles */
+.nav-item {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-item:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.nav-item::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, rgba(226, 64, 18, 0.5), rgba(233, 196, 106, 0.5));
+    border-radius: 12px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.nav-item:hover::before {
+    opacity: 1;
+}
+
+.nav-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(226, 64, 18, 0.2);
+    border-radius: 50%;
+    width: 60px;
+    margin: 0 auto 1rem auto;
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover .nav-icon {
+    background: rgba(226, 64, 18, 0.4);
+    transform: scale(1.1);
+}
+
+.nav-item h3 {
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.nav-item p {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
     </style>
 </head>
 <body>
@@ -380,9 +469,69 @@
             <p>August 2025</p>
         </div>
     </div>
-
+<!-- Navigation Index -->
+<div class="page" style="background: #2a9d8f; color: #ffffff; padding: 3rem;">
+    <div class="curved-line">
+        <svg viewBox="0 0 300 400">
+            <path d="M 0,200 Q 150,100 100,400" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.2"/>
+        </svg>
+    </div>
+    <img src="https://cdn.prod.website-files.com/65c64b03c008e6b284926e9d/68712b0e5e0a619bd535f7b8_The-Marketing-Detective-Agency-Logo-Light.png" alt="The Marketing Detective Agency" class="logo white-logo" style="margin-bottom: 2rem;">
+    
+    <h2 style="color: #ffffff; text-align: center; margin-bottom: 3rem;">Navigation & Contents</h2>
+    
+    <div style="max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+        
+        <!-- Executive Summary -->
+        <div class="nav-item" onclick="document.getElementById('executive-summary').scrollIntoView({behavior: 'smooth'})">
+            <div class="nav-icon">📊</div>
+            <h3>Executive Summary</h3>
+            <p>Strategic findings & opportunities</p>
+        </div>
+        
+        <!-- Customer Analysis -->
+        <div class="nav-item" onclick="document.getElementById('customer-analysis').scrollIntoView({behavior: 'smooth'})">
+            <div class="nav-icon">🎯</div>
+            <h3>Customer Analysis</h3>
+            <p>Universal document opportunity</p>
+        </div>
+        
+        <!-- Landscape Assessment -->
+        <div class="nav-item" onclick="document.getElementById('landscape-assessment').scrollIntoView({behavior: 'smooth'})">
+            <div class="nav-icon">🏔️</div>
+            <h3>Landscape Assessment</h3>
+            <p>Competitive advantages</p>
+        </div>
+        
+        <!-- Why Choose Us -->
+        <div class="nav-item" onclick="document.getElementById('why-choose-us').scrollIntoView({behavior: 'smooth'})">
+            <div class="nav-icon">⭐</div>
+            <h3>Why Choose Us</h3>
+            <p>Optimized messaging & guarantees</p>
+        </div>
+        
+        <!-- Customer Experience -->
+        <div class="nav-item" onclick="document.getElementById('customer-experience').scrollIntoView({behavior: 'smooth'})">
+            <div class="nav-icon">🚀</div>
+            <h3>Customer Experience</h3>
+            <p>90-day implementation system</p>
+        </div>
+        
+        <!-- Strategic Summary -->
+        <div class="nav-item" onclick="document.getElementById('strategic-summary').scrollIntoView({behavior: 'smooth'})">
+            <div class="nav-icon">🎯</div>
+            <h3>Strategic Summary</h3>
+            <p>Recommendations & next steps</p>
+        </div>
+        
+    </div>
+    
+    <div style="text-align: center; margin-top: 3rem; opacity: 0.8;">
+        <p>Click any section to navigate directly</p>
+    </div>
+</div>
     <!-- Executive Summary Section Divider -->
-    <div class="section-divider">
+    <div class="section-divider" id="executive-summary">
         <img src="https://cdn.prod.website-files.com/65c64b03c008e6b284926e9d/68712b0e5e0a619bd535f7b8_The-Marketing-Detective-Agency-Logo-Light.png" alt="The Marketing Detective Agency" class="logo white-logo">
         <h2>Executive Summary</h2>
     </div>
@@ -420,7 +569,7 @@
     </div>
 
     <!-- CLUE Analysis Section Divider -->
-    <div class="section-divider">
+    <div class="section-divider" id="customer-analysis">
         <img src="https://cdn.prod.website-files.com/65c64b03c008e6b284926e9d/68712b0e5e0a619bd535f7b8_The-Marketing-Detective-Agency-Logo-Light.png" alt="The Marketing Detective Agency" class="logo white-logo">
         <h2>Detailed CLUE Analysis</h2>
     </div>
@@ -788,7 +937,7 @@
 
     <!-- Landscape Assessment Section -->
     <div class="content-page">
-        <h2>L - Landscape Assessment</h2>
+        <h2 id="landscape-assessment">L - Landscape Assessment</h2>
         
         <h3>How Your Market Really Works and Where Competition is Vulnerable</h3>
 
@@ -848,7 +997,7 @@
 
     <!-- U - Why Choose Us Section -->
     <div class="content-page">
-        <h2>U - "Why Choose Us" Creation & Strategic Messaging</h2>
+        <h2 id="why-choose-us">U - "Why Choose Us" Creation & Strategic Messaging</h2>
 
         <h3>Current "Why Choose Us" Assessment</h3>
         <p style="font-style: italic; color: #666;">"We extract documents for insurers faster and more accurately than anyone else using AI"</p>
@@ -996,7 +1145,7 @@
 
     <!-- Customer Experience Section -->
     <div class="content-page">
-        <h2>E - Customer Experience & Customer Acquisition Strategy</h2>
+        <h2 id="customer-experience">E - Customer Experience & Customer Acquisition Strategy</h2>
 
         <h3>Current Customer Experience Analysis</h3>
 
@@ -1532,7 +1681,7 @@
 
     <!-- Final Summary Content -->
     <div class="content-page">
-        <h2>COMPREHENSIVE 'INSURTECH REVENUE PLAN' SUMMARY & RECOMMENDATIONS</h2>
+        <h2 id="strategic-summary">COMPREHENSIVE 'INSURTECH REVENUE PLAN' SUMMARY & RECOMMENDATIONS</h2>
 
         <h3>The Strategic Reality: FinTech Micro's Untapped Global Advantage</h3>
 
