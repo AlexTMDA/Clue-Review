@@ -45,13 +45,22 @@
         }
 
         .curved-line {
-            position: absolute;
-            top: 20%;
-            right: 10%;
-            width: 200px;
-            height: 100px;
-            opacity: 0.3;
-        }
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    width: 400px;
+    height: 200px;
+    opacity: 0.6;
+}
+
+.curved-line-small {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    width: 200px;
+    height: 100px;
+    opacity: 0.3;
+}
 
         .cover-logo {
             max-width: 400px;
@@ -149,22 +158,28 @@
         }
 
         .section-divider {
-            background: var(--teal);
-            color: var(--white);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            position: relative;
-        }
+    background: var(--teal);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
 
-        .section-title {
-            font-family: 'Questrial', sans-serif;
-            font-size: 3rem;
-            font-weight: 400;
-            margin-bottom: 1rem;
-        }
+.section-divider h1 {
+    color: var(--white);
+    border-bottom: 3px solid var(--white);
+}
+
+.section-title {
+    font-family: 'Questrial', sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
 
         .content-page {
             background: var(--white);
@@ -173,11 +188,12 @@
         }
 
         .logo-bottom {
-            position: absolute;
-            bottom: 2rem;
-            right: 2rem;
-            width: 150px;
-        }
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 150px;
+    z-index: 100;
+}
 
         h1 {
             font-family: 'Questrial', sans-serif;
@@ -250,15 +266,30 @@
             text-align: center;
         }
 
-        .value-prop-box h3 {
-            color: var(--white);
-            margin-bottom: 1rem;
-        }
+        .value-prop-box {
+    background: var(--dark-blue);
+    color: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+    text-align: center;
+}
 
-        .value-prop-box p {
-            font-size: 1.1rem;
-            font-weight: 600;
-        }
+.value-prop-box h3 {
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.value-prop-box h2 {
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.value-prop-box p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--white);
+}
 
         .metrics-grid {
             display: grid;
@@ -384,9 +415,9 @@
 <body>
     <!-- Cover Page -->
     <div class="page cover-page">
-        <svg class="curved-line" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10 80C30 20, 80 20, 100 50C120 80, 170 80, 190 20" stroke="#e24012" stroke-width="3" fill="none"/>
-        </svg>
+        <svg class="curved-line" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20 160C60 40, 160 40, 200 100C240 160, 340 160, 380 40" stroke="#e24012" stroke-width="6" fill="none"/>
+</svg>
         <img src="https://cdn.prod.website-files.com/65c64b03c008e6b284926e9d/65c64b03c008e6b284926f29_The-Marketing-Detective-Agency-Logo-smaller.png" alt="The Marketing Detective Agency" class="cover-logo">
         <h1 class="cover-title">ARETE ADJUSTING</h1>
         <p class="cover-subtitle">Your Blueprint for Winning More Customers & Growing Revenue</p>
@@ -395,9 +426,9 @@
 
     <!-- Navigation Page -->
     <div class="page navigation-page">
-        <svg class="curved-line" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10 80C30 20, 80 20, 100 50C120 80, 170 80, 190 20" stroke="#ffffff" stroke-width="3" fill="none"/>
-        </svg>
+        <svg class="curved-line-small" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 80C30 20, 80 20, 100 50C120 80, 170 80, 190 20" stroke="#ffffff" stroke-width="3" fill="none"/>
+</svg>
         <img src="https://cdn.prod.website-files.com/65c64b03c008e6b284926e9d/68712b0e5e0a619bd535f7b8_The-Marketing-Detective-Agency-Logo-Light.png" alt="The Marketing Detective Agency" style="width: 200px; margin-bottom: 2rem;">
         
         <h2 class="nav-title">Revenue Plan Navigation</h2>
@@ -477,9 +508,9 @@
 
     <!-- Executive Summary Section Divider -->
     <div class="page section-divider">
-        <svg class="curved-line" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10 80C30 20, 80 20, 100 50C120 80, 170 80, 190 20" stroke="#ffffff" stroke-width="3" fill="none"/>
-        </svg>
+        <svg class="curved-line-small" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 80C30 20, 80 20, 100 50C120 80, 170 80, 190 20" stroke="#ffffff" stroke-width="3" fill="none"/>
+</svg>
         <img src="https://cdn.prod.website-files.com/65c64b03c008e6b284926e9d/68712b0e5e0a619bd535f7b8_The-Marketing-Detective-Agency-Logo-Light.png" alt="Logo" style="width: 200px; margin-bottom: 2rem;">
         <h1 class="section-title">Executive Summary</h1>
     </div>
@@ -599,9 +630,9 @@
 
     <!-- Customer Analysis Section Divider -->
     <div class="page section-divider">
-        <svg class="curved-line" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10 80C30 20, 80 20, 100 50C120 80, 170 80, 190 20" stroke="#ffffff" stroke-width="3" fill="none"/>
-        </svg>
+        <svg class="curved-line-small" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 80C30 20, 80 20, 100 50C120 80, 170 80, 190 20" stroke="#ffffff" stroke-width="3" fill="none"/>
+</svg>
         <img src="https://cdn.prod.website-files.com/65c64b03c008e6b284926e9d/68712b0e5e0a619bd535f7b8_The-Marketing-Detective-Agency-Logo-Light.png" alt="Logo" style="width: 200px; margin-bottom: 2rem;">
         <h1 class="section-title">Customer Analysis</h1>
     </div>
@@ -949,9 +980,9 @@
 
     <!-- Landscape Assessment Section Divider -->
     <div class="page section-divider">
-        <svg class="curved-line" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10 80C30 20, 80 20, 100 50C120 80, 170 80, 190 20" stroke="#ffffff" stroke-width="3" fill="none"/>
-        </svg>
+        <svg class="curved-line-small" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 80C30 20, 80 20, 100 50C120 80, 170 80, 190 20" stroke="#ffffff" stroke-width="3" fill="none"/>
+</svg>
         <img src="https://cdn.prod.website-files.com/65c64b03c008e6b284926e9d/68712b0e5e0a619bd535f7b8_The-Marketing-Detective-Agency-Logo-Light.png" alt="Logo" style="width: 200px; margin-bottom: 2rem;">
         <h1 class="section-title">Landscape Assessment</h1>
     </div>
@@ -1196,9 +1227,9 @@
 
     <!-- Why Choose Us Section Divider -->
     <div class="page section-divider">
-        <svg class="curved-line" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10 80C30 20, 80 20, 100 50C120 80, 170 80, 190 20" stroke="#ffffff" stroke-width="3" fill="none"/>
-        </svg>
+        <svg class="curved-line-small" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 80C30 20, 80 20, 100 50C120 80, 170 80, 190 20" stroke="#ffffff" stroke-width="3" fill="none"/>
+</svg>
         <img src="https://cdn.prod.website-files.com/65c64b03c008e6b284926e9d/68712b0e5e0a619bd535f7b8_The-Marketing-Detective-Agency-Logo-Light.png" alt="Logo" style="width: 200px; margin-bottom: 2rem;">
         <h1 class="section-title">"Why Choose Us" Creation</h1>
     </div>
@@ -1403,9 +1434,9 @@
 
     <!-- Customer Experience Section Divider -->
     <div class="page section-divider">
-        <svg class="curved-line" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10 80C30 20, 80 20, 100 50C120 80, 170 80, 190 20" stroke="#ffffff" stroke-width="3" fill="none"/>
-        </svg>
+        <svg class="curved-line-small" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 80C30 20, 80 20, 100 50C120 80, 170 80, 190 20" stroke="#ffffff" stroke-width="3" fill="none"/>
+</svg>
         <img src="https://cdn.prod.website-files.com/65c64b03c008e6b284926e9d/68712b0e5e0a619bd535f7b8_The-Marketing-Detective-Agency-Logo-Light.png" alt="Logo" style="width: 200px; margin-bottom: 2rem;">
         <h1 class="section-title">Customer Experience Strategy</h1>
     </div>
@@ -1812,9 +1843,9 @@
 
     <!-- Strategic Summary Section Divider -->
     <div class="page section-divider">
-        <svg class="curved-line" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10 80C30 20, 80 20, 100 50C120 80, 170 80, 190 20" stroke="#ffffff" stroke-width="3" fill="none"/>
-        </svg>
+        <svg class="curved-line-small" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 80C30 20, 80 20, 100 50C120 80, 170 80, 190 20" stroke="#ffffff" stroke-width="3" fill="none"/>
+</svg>
         <img src="https://cdn.prod.website-files.com/65c64b03c008e6b284926e9d/68712b0e5e0a619bd535f7b8_The-Marketing-Detective-Agency-Logo-Light.png" alt="Logo" style="width: 200px; margin-bottom: 2rem;">
         <h1 class="section-title">Strategic Summary</h1>
     </div>
