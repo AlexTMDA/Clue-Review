@@ -388,6 +388,53 @@
                 print-color-adjust: exact;
                 -webkit-print-color-adjust: exact;
             }
+.email-container {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 1rem 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.email-header {
+    background: #e9ecef;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #ddd;
+    border-radius: 8px 8px 0 0;
+}
+
+.email-field {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+}
+
+.email-field strong {
+    color: #495057;
+    display: inline-block;
+    width: 60px;
+}
+
+.email-body {
+    padding: 1rem;
+    background: white;
+    border-radius: 0 0 8px 8px;
+    line-height: 1.6;
+}
+
+.forwarded-section {
+    border-left: 3px solid #6c757d;
+    margin: 1rem 0;
+    padding-left: 1rem;
+    background: #f8f9fa;
+    border-radius: 0 4px 4px 0;
+}
+
+.forwarded-header {
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
         }
     </style>
 </head>
@@ -1622,40 +1669,88 @@
     <h4>Message Engineering by Stakeholder</h4>
     
     <h5><strong>Claims Managers/Directors:</strong></h5>
-    <p><strong>Initial Email (From Research Assistant):</strong> Subject: "FW: Claims Director at [Company] - perfect for marine study"</p>
-    <p>Body: "Hi [Name],</p>
-    <p>I'm forwarding Liam's note below - he specifically identified you as someone whose insights would be invaluable for our marine claims intelligence research.</p>
-    <p>He asked me to reach out personally to see if you'd be willing to share 15 minutes of your expertise.</p>
-    <p>Best regards, [Assistant Name]</p>
-    <p>--- Forwarded Message --- From: Liam Richards Subject: [Name] at [Company] - perfect for marine study</p>
-    <p>Team - I'd really like to get [Name]'s perspective for our research. They're dealing with exactly the kind of portfolio complexity we're studying - managing [specific detail about their company] whilst broker pressure is intensifying across the industry.</p>
-    <p>Their insights on achieving faster claims closure whilst maintaining quality would be invaluable. Can someone reach out to see if they'd participate? Only need 15 minutes.</p>
-    <p>Liam"</p>
+    
+    <div class="email-container">
+        <div class="email-header">
+            <div class="email-field"><strong>From:</strong> Research Assistant &lt;research@marineclaimsintelligence.com&gt;</div>
+            <div class="email-field"><strong>To:</strong> [Name] &lt;[email]&gt;</div>
+            <div class="email-field"><strong>Subject:</strong> FW: Claims Director at [Company] - perfect for marine study</div>
+        </div>
+        <div class="email-body">
+            <p>Hi [Name],</p>
+            <p>I'm forwarding Liam's note below - he specifically identified you as someone whose insights would be invaluable for our marine claims intelligence research.</p>
+            <p>He asked me to reach out personally to see if you'd be willing to share 15 minutes of your expertise.</p>
+            <p>Best regards,<br>[Assistant Name]</p>
+            
+            <div class="forwarded-section">
+                <div class="forwarded-header">--- Forwarded Message ---<br>From: Liam Richards<br>Subject: [Name] at [Company] - perfect for marine study</div>
+                <p>Team - I'd really like to get [Name]'s perspective for our research. They're dealing with exactly the kind of portfolio complexity we're studying - managing [specific detail about their company] whilst broker pressure is intensifying across the industry.</p>
+                <p>Their insights on achieving faster claims closure whilst maintaining quality would be invaluable. Can someone reach out to see if they'd participate? Only need 15 minutes.</p>
+                <p>Liam</p>
+            </div>
+        </div>
+    </div>
 
     <h5><strong>Underwriting Teams:</strong></h5>
-    <p><strong>Initial Email (Forwarded Format):</strong> Subject: "FW: [Company]'s underwriting team - critical perspective needed"</p>
-    <p>"Hi [Name],</p>
-    <p>Forwarding Liam's request below - he identified your team as having unique insights into portfolio profitability challenges in marine insurance.</p>
-    <p>The research topic really focuses on something I think you're grappling with: how to use claims intelligence for better risk selection when you're walking into renewal meetings blind about losses.</p>
-    <p>Would you have 15 minutes to participate?</p>
-    <p>--- Forwarded Message --- From: Liam Richards</p>
-    <p>Team - [Company]'s marine book is exactly the type we need to study. They're sophisticated enough to understand the data problem but still struggling with portfolio visibility. [Name] would give us the underwriting perspective we're missing."</p>
+    
+    <div class="email-container">
+        <div class="email-header">
+            <div class="email-field"><strong>From:</strong> Research Assistant &lt;research@marineclaimsintelligence.com&gt;</div>
+            <div class="email-field"><strong>To:</strong> [Name] &lt;[email]&gt;</div>
+            <div class="email-field"><strong>Subject:</strong> FW: [Company]'s underwriting team - critical perspective needed</div>
+        </div>
+        <div class="email-body">
+            <p>Hi [Name],</p>
+            <p>Forwarding Liam's request below - he identified your team as having unique insights into portfolio profitability challenges in marine insurance.</p>
+            <p>The research topic really focuses on something I think you're grappling with: how to use claims intelligence for better risk selection when you're walking into renewal meetings blind about losses.</p>
+            <p>Would you have 15 minutes to participate?</p>
+            
+            <div class="forwarded-section">
+                <div class="forwarded-header">--- Forwarded Message ---<br>From: Liam Richards</div>
+                <p>Team - [Company]'s marine book is exactly the type we need to study. They're sophisticated enough to understand the data problem but still struggling with portfolio visibility. [Name] would give us the underwriting perspective we're missing.</p>
+            </div>
+        </div>
+    </div>
 
     <h5><strong>Brokers (Influence Strategy):</strong></h5>
-    <p><strong>Initial Email (Forwarded Format):</strong> Subject: "FW: [Broker Name] - they'll tell us the truth about marine claims"</p>
-    <p>"Hi [Name],</p>
-    <p>Liam specifically asked me to reach out - he values your candid perspective on which insurers actually deliver on marine claims promises versus those just talking.</p>
-    <p>The research topic hits directly on your world: identifying which TPAs are causing broker relationship damage through poor service.</p>
-    <p>--- Forwarded Message --- From: Liam Richards</p>
-    <p>We need [Name]'s perspective - they see the reality of marine claims handling across multiple insurers. They'll tell us what's actually happening versus the marketing promises. Critical for our research credibility."</p>
+    
+    <div class="email-container">
+        <div class="email-header">
+            <div class="email-field"><strong>From:</strong> Research Assistant &lt;research@marineclaimsintelligence.com&gt;</div>
+            <div class="email-field"><strong>To:</strong> [Name] &lt;[email]&gt;</div>
+            <div class="email-field"><strong>Subject:</strong> FW: [Broker Name] - they'll tell us the truth about marine claims</div>
+        </div>
+        <div class="email-body">
+            <p>Hi [Name],</p>
+            <p>Liam specifically asked me to reach out - he values your candid perspective on which insurers actually deliver on marine claims promises versus those just talking.</p>
+            <p>The research topic hits directly on your world: identifying which TPAs are causing broker relationship damage through poor service.</p>
+            
+            <div class="forwarded-section">
+                <div class="forwarded-header">--- Forwarded Message ---<br>From: Liam Richards</div>
+                <p>We need [Name]'s perspective - they see the reality of marine claims handling across multiple insurers. They'll tell us what's actually happening versus the marketing promises. Critical for our research credibility.</p>
+            </div>
+        </div>
+    </div>
 
     <h5><strong>Lloyd's Market:</strong></h5>
-    <p><strong>Initial Email (Forwarded Format):</strong> Subject: "FW: [Syndicate] - Lloyd's perspective essential"</p>
-    <p>"Hi [Name],</p>
-    <p>Liam asked me to reach out personally - your syndicate's approach to marine claims in the Lloyd's market would add crucial perspective to our global study.</p>
-    <p>The topic centres on how Lloyd's syndicates achieve profitability whilst facing increased scrutiny on claims performance.</p>
-    <p>--- Forwarded Message --- From: Liam Richards</p>
-    <p>[Syndicate]'s marine book is exactly what we need to study for the Lloyd's market perspective. They're dealing with the paper-to-digital transition whilst maintaining Lloyd's standards. Get [Name] if possible - 15 minutes would be invaluable."</p>
+    
+    <div class="email-container">
+        <div class="email-header">
+            <div class="email-field"><strong>From:</strong> Research Assistant &lt;research@marineclaimsintelligence.com&gt;</div>
+            <div class="email-field"><strong>To:</strong> [Name] &lt;[email]&gt;</div>
+            <div class="email-field"><strong>Subject:</strong> FW: [Syndicate] - Lloyd's perspective essential</div>
+        </div>
+        <div class="email-body">
+            <p>Hi [Name],</p>
+            <p>Liam asked me to reach out personally - your syndicate's approach to marine claims in the Lloyd's market would add crucial perspective to our global study.</p>
+            <p>The topic centres on how Lloyd's syndicates achieve profitability whilst facing increased scrutiny on claims performance.</p>
+            
+            <div class="forwarded-section">
+                <div class="forwarded-header">--- Forwarded Message ---<br>From: Liam Richards</div>
+                <p>[Syndicate]'s marine book is exactly what we need to study for the Lloyd's market perspective. They're dealing with the paper-to-digital transition whilst maintaining Lloyd's standards. Get [Name] if possible - 15 minutes would be invaluable.</p>
+            </div>
+        </div>
+    </div>
 </div>
         <h2>Month 1 Completion Milestone - Foundation Complete</h2>
         <ul>
