@@ -25,47 +25,83 @@
         
         body {
             font-family: 'Open Sans', sans-serif;
-            color: var(--dark-blue);
-            line-height: 1.6;
-            background: var(--white);
+            color: #333333;
+            line-height: 1.85;
+            background: #fafafa;
+            font-size: 17px;
         }
         
         h1, h2, h3, h4, h5, h6 {
     font-family: 'Questrial', sans-serif;
     line-height: 1.3;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    color: var(--dark-blue);
 }
 
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; font-weight: 700; }
-h3 { font-size: 1.5rem; font-weight: 700; }
-h4 { font-size: 1.25rem; font-weight: 700; }
-h5 { font-size: 1.1rem; font-weight: 700; }
+h1 { 
+    font-size: 2.5rem; 
+    margin-bottom: 2rem;
+}
+h2 { 
+    font-size: 2rem; 
+    font-weight: 700; 
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    border-top: 3px solid var(--teal);
+}
+h3 { 
+    font-size: 1.5rem; 
+    font-weight: 700; 
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+h4 { 
+    font-size: 1.25rem; 
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+h5 { 
+    font-size: 1.1rem; 
+    font-weight: 700;
+    margin-top: 1.5rem;
+}
         
-        p { margin-bottom: 1rem; }
+        p { 
+            margin-bottom: 1.5rem; 
+            line-height: 1.9;
+        }
         
-        strong { font-weight: 700; color: var(--dark-blue); }
+        strong { 
+            font-weight: 700; 
+            color: var(--dark-blue); 
+        }
         
         ul, ol {
             margin-left: 2rem;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
         }
         
         li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.75rem;
         }
         
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 1.5rem 0;
+            margin: 2rem 0;
             page-break-inside: avoid;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-radius: 8px;
+            overflow: hidden;
         }
         
         table th,
         table td {
-            border: 1px solid var(--dark-blue);
-            padding: 0.75rem;
+            border: 1px solid #e0e0e0;
+            padding: 1rem;
             text-align: left;
         }
         
@@ -73,58 +109,110 @@ h5 { font-size: 1.1rem; font-weight: 700; }
             background-color: var(--teal);
             color: var(--white);
             font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
         }
         
         table tr:nth-child(even) {
-            background-color: rgba(42, 157, 143, 0.1);
+            background-color: rgba(42, 157, 143, 0.08);
+        }
+        
+        table tr:hover {
+            background-color: rgba(42, 157, 143, 0.15);
+            transition: background-color 0.2s ease;
         }
         
         /* Highlighted Content Boxes */
         .highlight-box {
             background: rgba(42, 157, 143, 0.15);
-            border-left: 4px solid var(--teal);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 4px;
+            border-left: 5px solid var(--teal);
+            padding: 2rem;
+            margin: 2.5rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(42, 157, 143, 0.1);
+            position: relative;
+        }
+        
+        .highlight-box::before {
+            content: "💡";
+            font-size: 1.5rem;
+            position: absolute;
+            top: 1.5rem;
+            left: -0.75rem;
+            background: white;
+            padding: 0.25rem;
+            border-radius: 50%;
         }
 
         .highlight-box-yellow {
             background: rgba(233, 196, 106, 0.2);
-            border-left: 4px solid var(--yellow);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 4px;
+            border-left: 5px solid var(--yellow);
+            padding: 2rem;
+            margin: 2.5rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(233, 196, 106, 0.15);
+            position: relative;
+        }
+        
+        .highlight-box-yellow::before {
+            content: "⚡";
+            font-size: 1.5rem;
+            position: absolute;
+            top: 1.5rem;
+            left: -0.75rem;
+            background: white;
+            padding: 0.25rem;
+            border-radius: 50%;
         }
 
         .highlight-box-orange {
             background: rgba(226, 64, 18, 0.1);
-            border-left: 4px solid var(--primary-orange);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 4px;
+            border-left: 5px solid var(--primary-orange);
+            padding: 2rem;
+            margin: 2.5rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(226, 64, 18, 0.1);
+            position: relative;
+        }
+        
+        .highlight-box-orange::before {
+            content: "🎯";
+            font-size: 1.5rem;
+            position: absolute;
+            top: 1.5rem;
+            left: -0.75rem;
+            background: white;
+            padding: 0.25rem;
+            border-radius: 50%;
         }
 
         /* Week/Action Sections with Orange Border */
         .action-section {
-            border-left: 4px solid var(--primary-orange);
-            padding-left: 2rem;
-            margin: 2rem 0;
+            border-left: 5px solid var(--primary-orange);
+            padding-left: 2.5rem;
+            margin: 2.5rem 0;
+            background: rgba(226, 64, 18, 0.02);
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-radius: 0 8px 8px 0;
         }
 
         .action-section h4 {
             font-size: 1.3rem;
             margin-bottom: 1rem;
+            color: var(--primary-orange);
         }
 
         /* Subsection styling */
         .subsection {
-            margin: 1.5rem 0;
+            margin: 2rem 0;
         }
 
         .subsection h5 {
             font-size: 1.15rem;
             font-weight: 700;
-            margin-bottom: 0.75rem;
+            margin-bottom: 1rem;
             color: var(--dark-blue);
         }
 
@@ -134,15 +222,27 @@ h5 { font-size: 1.1rem; font-weight: 700; }
         }
 
         .action-section ol li {
-            margin-bottom: 1rem;
-            line-height: 1.7;
+            margin-bottom: 1.25rem;
+            line-height: 1.8;
         }
         
         /* Page Structure */
         .page {
-    padding: 3rem 6rem;
-    position: relative;
-}
+            padding: 3rem 4rem;
+            position: relative;
+            background: white;
+            margin-bottom: 2rem;
+        }
+        
+        .content-page {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-content {
+            max-width: 850px;
+            margin: 0 auto;
+        }
         
         .cover-page {
             background: var(--white);
@@ -396,10 +496,185 @@ h5 { font-size: 1.1rem; font-weight: 700; }
             }
         }
         
+        /* Stat Callout Boxes */
+        .stat-callout {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary-orange);
+            text-align: center;
+            padding: 2rem 2.5rem;
+            margin: 2.5rem auto;
+            background: linear-gradient(135deg, rgba(226, 64, 18, 0.05) 0%, rgba(226, 64, 18, 0.1) 100%);
+            border-radius: 12px;
+            border: 2px solid rgba(226, 64, 18, 0.2);
+            box-shadow: 0 4px 15px rgba(226, 64, 18, 0.1);
+            max-width: 700px;
+        }
+        
+        .stat-callout strong {
+            color: var(--primary-orange);
+            font-size: 1.6rem;
+        }
+        
+        /* Reading Progress Bar */
+        .reading-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--teal) 0%, var(--primary-orange) 100%);
+            z-index: 1000;
+            transition: width 0.1s ease;
+        }
+        
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--teal);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(42, 157, 143, 0.3);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 999;
+            font-size: 1.5rem;
+            border: none;
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            background: var(--primary-orange);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(226, 64, 18, 0.3);
+        }
+        
+        /* Section Numbers */
+        .section-number {
+            display: inline-block;
+            background: var(--teal);
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 35px;
+            font-weight: 700;
+            margin-right: 0.75rem;
+            font-size: 0.9rem;
+        }
+        
+        /* Enhanced Section Dividers */
+        .section-divider {
+            background: linear-gradient(135deg, var(--teal) 0%, var(--dark-blue) 100%);
+            padding: 3rem 4rem;
+            margin: 3rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .section-divider::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="white" opacity="0.1"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .section-divider h2 {
+            color: white;
+            border: none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Improved Links */
+        a {
+            color: var(--teal);
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+        
+        a:hover {
+            border-bottom-color: var(--teal);
+        }
+        
+        /* Number Highlights within Text */
+        .highlight-number {
+            background: rgba(226, 64, 18, 0.1);
+            padding: 0.1rem 0.4rem;
+            border-radius: 4px;
+            font-weight: 700;
+            color: var(--primary-orange);
+        }
+        
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+                font-size: 12pt;
+            }
+            
+            .back-to-top,
+            .reading-progress,
+            .pdf-button {
+                display: none !important;
+            }
+            
+            .page {
+                padding: 1cm;
+                page-break-after: always;
+            }
+            
+            .section-divider {
+                background: var(--teal);
+                page-break-after: avoid;
+            }
+            
+            h2, h3, h4, h5 {
+                page-break-after: avoid;
+            }
+            
+            .highlight-box,
+            .highlight-box-yellow,
+            .highlight-box-orange,
+            .action-section {
+                page-break-inside: avoid;
+            }
+        }
+        
         /* Responsive Design */
         @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+            
             .page {
                 padding: 2rem 1.5rem;
+            }
+            
+            .section-content {
+                max-width: 100%;
             }
             
             .cover-title {
@@ -411,15 +686,50 @@ h5 { font-size: 1.1rem; font-weight: 700; }
             }
             
             h1 { font-size: 2rem; }
-            h2 { font-size: 1.75rem; }
+            h2 { 
+                font-size: 1.75rem;
+                margin-top: 3rem;
+                padding-top: 1.5rem;
+            }
             h3 { font-size: 1.3rem; }
             
             .nav-grid {
                 grid-template-columns: 1fr;
             }
             
+            .section-divider {
+                padding: 2rem 1.5rem;
+            }
+            
             .section-divider h2 {
-                font-size: 2rem;
+                font-size: 1.75rem;
+            }
+            
+            .stat-callout {
+                font-size: 1.2rem;
+                padding: 1.5rem;
+            }
+            
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+            }
+            
+            .highlight-box::before,
+            .highlight-box-yellow::before,
+            .highlight-box-orange::before {
+                display: none;
+            }
+            
+            table {
+                font-size: 0.9rem;
+            }
+            
+            table th,
+            table td {
+                padding: 0.75rem 0.5rem;
             }
         }
     </style>
@@ -2084,6 +2394,40 @@ h5 { font-size: 1.1rem; font-weight: 700; }
 <div style="text-align: center; padding: 3rem 0;">
     <button class="pdf-button" onclick="window.print()">Save as PDF</button>
 </div>
+
+<!-- Reading Progress Bar -->
+<div class="reading-progress" id="readingProgress"></div>
+
+<!-- Back to Top Button -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script>
+// Reading Progress Bar
+window.addEventListener('scroll', function() {
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+    document.getElementById('readingProgress').style.width = scrolled + '%';
+});
+
+// Back to Top Button
+const backToTopButton = document.getElementById('backToTop');
+
+window.addEventListener('scroll', function() {
+    if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('visible');
+    } else {
+        backToTopButton.classList.remove('visible');
+    }
+});
+
+backToTopButton.addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+</script>
 
 </body>
 </html>
