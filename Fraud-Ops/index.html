@@ -79,6 +79,65 @@ h5 { font-size: 1.1rem; font-weight: 700; }
             background-color: rgba(42, 157, 143, 0.1);
         }
         
+        /* Highlighted Content Boxes */
+        .highlight-box {
+            background: rgba(42, 157, 143, 0.15);
+            border-left: 4px solid var(--teal);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .highlight-box-yellow {
+            background: rgba(233, 196, 106, 0.2);
+            border-left: 4px solid var(--yellow);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .highlight-box-orange {
+            background: rgba(226, 64, 18, 0.1);
+            border-left: 4px solid var(--primary-orange);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        /* Week/Action Sections with Orange Border */
+        .action-section {
+            border-left: 4px solid var(--primary-orange);
+            padding-left: 2rem;
+            margin: 2rem 0;
+        }
+
+        .action-section h4 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Subsection styling */
+        .subsection {
+            margin: 1.5rem 0;
+        }
+
+        .subsection h5 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--dark-blue);
+        }
+
+        /* Ordered lists inside action sections */
+        .action-section ol {
+            margin-left: 1.5rem;
+        }
+
+        .action-section ol li {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+        
         /* Page Structure */
         .page {
     padding: 3rem 6rem;
@@ -902,13 +961,21 @@ h5 { font-size: 1.1rem; font-weight: 700; }
         
         <p>Your solution creates multiple career-building opportunities for buyers:</p>
         
-        <p><strong>Career Advancement Triggers:</strong> Successfully implementing FraudOps achieving <strong>95% backlog reduction</strong> and measurable productivity transformation becomes powerful CV achievement and internal promotion justification—Technology Partner award association allows champions to present themselves as visionary leaders who identified and deployed award-winning technology before competitors.</p>
+        <div class="highlight-box-orange">
+            <p><strong>Career Advancement Triggers:</strong> Successfully implementing FraudOps achieving <strong>95% backlog reduction</strong> and measurable productivity transformation becomes powerful CV achievement and internal promotion justification—Technology Partner award association allows champions to present themselves as visionary leaders who identified and deployed award-winning technology before competitors.</p>
+        </div>
         
-        <p><strong>Risk Protection Needs:</strong> Decision-makers fear implementation failure damaging careers more than they desire success benefits—your risk mitigation through Zurich proof, phased deployment, services backing, and award credibility signals safe, validated technology rather than risky experimentation.</p>
+        <div class="highlight-box-orange">
+            <p><strong>Risk Protection Needs:</strong> Decision-makers fear implementation failure damaging careers more than they desire success benefits—your risk mitigation through Zurich proof, phased deployment, services backing, and award credibility signals safe, validated technology rather than risky experimentation.</p>
+        </div>
         
-        <p><strong>Status Enhancement Desires:</strong> Success with FraudOps elevates champion's professional standing through industry recognition as SIU Manager who transformed operations from Excel chaos to award-winning platform sophistication, executive visibility delivering quantified results gaining board-level appreciation, and thought leadership opportunities authoring articles and speaking at conferences.</p>
+        <div class="highlight-box-orange">
+            <p><strong>Status Enhancement Desires:</strong> Success with FraudOps elevates champion's professional standing through industry recognition as SIU Manager who transformed operations from Excel chaos to award-winning platform sophistication, executive visibility delivering quantified results gaining board-level appreciation, and thought leadership opportunities authoring articles and speaking at conferences.</p>
+        </div>
         
-        <p><strong>Decision Confidence Factors:</strong> Personal assurance elements must align before champions stake reputation—named references speaking with other SIU Managers, pilot success with 3-5 investigators for 30 days demonstrating immediate value, executive buy-in securing visible support protecting champion politically, budget protection with clear pricing preventing career-damaging financial accountability issues.</p>
+        <div class="highlight-box-orange">
+            <p><strong>Decision Confidence Factors:</strong> Personal assurance elements must align before champions stake reputation—named references speaking with other SIU Managers, pilot success with 3-5 investigators for 30 days demonstrating immediate value, executive buy-in securing visible support protecting champion politically, budget protection with clear pricing preventing career-damaging financial accountability issues.</p>
+        </div>
         
         <h3>The Industry Economics Revelation</h3>
         
@@ -916,7 +983,9 @@ h5 { font-size: 1.1rem; font-weight: 700; }
         
         <p>There is a counterintuitive truth in technology: customers consistently pay more for effortless outcomes than for comprehensive features.</p>
         
-        <p><strong>The Analogy:</strong> The supplement industry (£123B) is nearly double the gym industry (£62B). Both promise "health," but supplements require zero effort, whilst gyms demand work. This is the "ease premium."</p>
+        <div class="highlight-box-yellow">
+            <p><strong>The Analogy:</strong> The supplement industry (£123B) is nearly double the gym industry (£62B). Both promise "health," but supplements require zero effort, whilst gyms demand work. This is the "ease premium."</p>
+        </div>
         
         <p><strong>Your Application:</strong> Competitors sell complex, lengthy implementations (12-18 months). FraudOps wins by emphasising effortless transformation: <strong>"Operational in days, integrated in 6-8 weeks, with zero admin overhead."</strong> This resonates deeply with buyers exhausted by complex IT projects.</p>
         
@@ -1077,11 +1146,13 @@ h5 { font-size: 1.1rem; font-weight: 700; }
         
         <h4>Your Winning Position</h4>
         
-        <p>You solve the <em>complete</em> challenge by connecting the business outcome directly to the personal win.</p>
-        
-        <p><strong>Strategic Message:</strong> "This platform delivers the measurable business results (like <strong>95% backlog reduction</strong>) that will position <em>you</em> as the operational excellence leader who transformed your department."</p>
-        
-        <p>This approach addresses the business need <em>and</em> the personal career benefit that competitors are too afraid or unaware to acknowledge. This justifies a premium position because you are solving a much deeper, more valuable set of problems.</p>
+        <div class="highlight-box">
+            <p>You solve the <em>complete</em> challenge by connecting the business outcome directly to the personal win.</p>
+            
+            <p><strong>Strategic Message:</strong> "This platform delivers the measurable business results (like <strong>95% backlog reduction</strong>) that will position <em>you</em> as the operational excellence leader who transformed your department."</p>
+            
+            <p>This approach addresses the business need <em>and</em> the personal career benefit that competitors are too afraid or unaware to acknowledge. This justifies a premium position because you are solving a much deeper, more valuable set of problems.</p>
+        </div>
         
         <h3>Authority Building Opportunities</h3>
         
@@ -1550,42 +1621,44 @@ h5 { font-size: 1.1rem; font-weight: 700; }
         
         <h5>Key Actions</h5>
         
-        <ol>
-            <li><strong>Develop the "UK SIU Operations Excellence Study 2025"</strong>
-                <ul>
-                    <li>Create 8-10 strategic questions exploring workflows, technology frustrations, and efficiency barriers.</li>
-                    <li>Position the team as experts (leveraging Mark Huxley's experience and the Technology Partner award) seeking peer insights.</li>
-                    <li>Plan to distribute findings in Q1 2026 via a white paper, conference presentations, and articles.</li>
-                    <li><strong>Investment:</strong> £2,000-£3,000 (for professional research design and report production).</li>
-                </ul>
-            </li>
-            
-            <li><strong>Build a Hyper-Targeted Prospect Database</strong>
-                <ul>
-                    <li><strong>Size:</strong> 200-250 highly qualified decision-makers (Head of Claims, SIU Manager, Fraud Operations Director).</li>
-                    <li><strong>Tools:</strong> Use LinkedIn Sales Navigator for targeting (UK, insurance, 200-2,000 employees) and ZoomInfo/Lusha for contacts.</li>
-                    <li><strong>Enrichment:</strong> Segment the database and add "trigger data" (e.g., leadership changes, regulatory mentions).</li>
-                    <li><strong>Investment:</strong> £300-£500/month (tools) + 10-15 hours (build time).</li>
-                </ul>
-            </li>
-            
-            <li><strong>Deploy the Outreach Infrastructure</strong>
-                <ul>
-                    <li>Set up 2-3 email domains with full authentication (SPF, DKIM, DMARC).</li>
-                    <li>Begin a systematic IP warming process (starting at 10 emails/day, escalating to 25+).</li>
-                    <li>Integrate the core tech stack: Calendly (scheduling), Zoom (calls), Fireflies.ai (call analysis), and HubSpot (CRM).</li>
-                    <li><strong>Investment:</strong> £200-£400/month + 8-10 hours (configuration).</li>
-                </ul>
-            </li>
-            
-            <li><strong>Develop the Message Framework</strong>
-                <ul>
-                    <li>Engineer a dual-message system that combines <strong>Research Authority</strong> with <strong>Individual Psychology Triggers</strong>.</li>
-                    <li>Create role-specific variations (e.g., for SIU Managers: focus on operational control; for Claims Directors: focus on executive visibility).</li>
-                    <li>Develop a conversation framework to naturally transition from "research" to "sales" by identifying pain signals.</li>
-                </ul>
-            </li>
-        </ol>
+        <div class="action-section">
+            <ol>
+                <li><strong>Develop the "UK SIU Operations Excellence Study 2025"</strong>
+                    <ul>
+                        <li>Create 8-10 strategic questions exploring workflows, technology frustrations, and efficiency barriers.</li>
+                        <li>Position the team as experts (leveraging Mark Huxley's experience and the Technology Partner award) seeking peer insights.</li>
+                        <li>Plan to distribute findings in Q1 2026 via a white paper, conference presentations, and articles.</li>
+                        <li><strong>Investment:</strong> £2,000-£3,000 (for professional research design and report production).</li>
+                    </ul>
+                </li>
+                
+                <li><strong>Build a Hyper-Targeted Prospect Database</strong>
+                    <ul>
+                        <li><strong>Size:</strong> 200-250 highly qualified decision-makers (Head of Claims, SIU Manager, Fraud Operations Director).</li>
+                        <li><strong>Tools:</strong> Use LinkedIn Sales Navigator for targeting (UK, insurance, 200-2,000 employees) and ZoomInfo/Lusha for contacts.</li>
+                        <li><strong>Enrichment:</strong> Segment the database and add "trigger data" (e.g., leadership changes, regulatory mentions).</li>
+                        <li><strong>Investment:</strong> £300-£500/month (tools) + 10-15 hours (build time).</li>
+                    </ul>
+                </li>
+                
+                <li><strong>Deploy the Outreach Infrastructure</strong>
+                    <ul>
+                        <li>Set up 2-3 email domains with full authentication (SPF, DKIM, DMARC).</li>
+                        <li>Begin a systematic IP warming process (starting at 10 emails/day, escalating to 25+).</li>
+                        <li>Integrate the core tech stack: Calendly (scheduling), Zoom (calls), Fireflies.ai (call analysis), and HubSpot (CRM).</li>
+                        <li><strong>Investment:</strong> £200-£400/month + 8-10 hours (configuration).</li>
+                    </ul>
+                </li>
+                
+                <li><strong>Develop the Message Framework</strong>
+                    <ul>
+                        <li>Engineer a dual-message system that combines <strong>Research Authority</strong> with <strong>Individual Psychology Triggers</strong>.</li>
+                        <li>Create role-specific variations (e.g., for SIU Managers: focus on operational control; for Claims Directors: focus on executive visibility).</li>
+                        <li>Develop a conversation framework to naturally transition from "research" to "sales" by identifying pain signals.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
         
         <div class="section-highlight">
             <h5>Core Message Template (Month 1 Only)</h5>
@@ -1623,41 +1696,43 @@ h5 { font-size: 1.1rem; font-weight: 700; }
         
         <h5>Key Actions</h5>
         
-        <ol>
-            <li><strong>Launch Graduated Outreach Campaign</strong>
-                <ul>
-                    <li><strong>Volume:</strong> Start at 10 emails/day, scaling to a sustainable 25/day by Week 3. This equals 150-200 highly personalised monthly messages.</li>
-                    <li><strong>Personalisation:</strong> Reference LinkedIn activity, company news (leadership changes), and insurance-line-specific challenges.</li>
-                    <li><strong>KPIs:</strong> Target <strong>40%+ open rates</strong> and <strong>2%+ response rates</strong>.</li>
-                    <li><strong>Ops:</strong> Respond to all positive replies within 2 hours using the Calendly link.</li>
-                </ul>
-            </li>
-            
-            <li><strong>Conduct 15-Minute "Research" Conversations</strong>
-                <ul>
-                    <li><strong>Mins 1-3: Rapport & Authority.</strong> ("<em>Thank you for participating... we're gathering insights from leading SIU teams...</em>")</li>
-                    <li><strong>Mins 4-11: Strategic Questioning.</strong> (Explore workflows, frustrations, tech gaps. <strong>Listen for pain signals</strong> that indicate a commercial opportunity.)</li>
-                    <li><strong>Mins 12-14: Value Delivery.</strong> (Share an anonymised insight or a tactical suggestion.)</li>
-                    <li><strong>Mins 14-15: Preserve the Relationship.</strong> ("<em>I'll share the final research... if you'd like to discuss your specific challenges privately, I'm happy to continue the conversation.</em>")</li>
-                </ul>
-            </li>
-            
-            <li><strong>Analyse and Optimise Performance</strong>
-                <ul>
-                    <li><strong>Email:</strong> A/B test subject lines, sending times, and personalisation levels to improve engagement.</li>
-                    <li><strong>Conversations:</strong> Review call recordings (Fireflies.ai) to identify successful questioning techniques, objection handling, and transition timing.</li>
-                    <li>Continuously refine all messaging based on this real-world data.</li>
-                </ul>
-            </li>
-            
-            <li><strong>Master the "Natural Transition"</strong>
-                <ul>
-                    <li><strong>Identify Buying Signals:</strong> Listen for phrases like, "<em>We've tried everything,</em>" "<em>Our current systems are failing,</em>" or "<em>Competitors are ahead.</em>"</li>
-                    <li><strong>Develop Transition Messaging:</strong> Create the pivot script: "<em>Based on our conversation, FraudOps specifically addresses that [disconnected intelligence systems] challenge you mentioned. Would a brief demo showing how Zurich solved that be valuable?</em>"</li>
-                    <li>Create nurture sequences (e.g., quarterly benchmark updates) for prospects not ready to buy.</li>
-                </ul>
-            </li>
-        </ol>
+        <div class="action-section">
+            <ol>
+                <li><strong>Launch Graduated Outreach Campaign</strong>
+                    <ul>
+                        <li><strong>Volume:</strong> Start at 10 emails/day, scaling to a sustainable 25/day by Week 3. This equals 150-200 highly personalised monthly messages.</li>
+                        <li><strong>Personalisation:</strong> Reference LinkedIn activity, company news (leadership changes), and insurance-line-specific challenges.</li>
+                        <li><strong>KPIs:</strong> Target <strong>40%+ open rates</strong> and <strong>2%+ response rates</strong>.</li>
+                        <li><strong>Ops:</strong> Respond to all positive replies within 2 hours using the Calendly link.</li>
+                    </ul>
+                </li>
+                
+                <li><strong>Conduct 15-Minute "Research" Conversations</strong>
+                    <ul>
+                        <li><strong>Mins 1-3: Rapport & Authority.</strong> ("<em>Thank you for participating... we're gathering insights from leading SIU teams...</em>")</li>
+                        <li><strong>Mins 4-11: Strategic Questioning.</strong> (Explore workflows, frustrations, tech gaps. <strong>Listen for pain signals</strong> that indicate a commercial opportunity.)</li>
+                        <li><strong>Mins 12-14: Value Delivery.</strong> (Share an anonymised insight or a tactical suggestion.)</li>
+                        <li><strong>Mins 14-15: Preserve the Relationship.</strong> ("<em>I'll share the final research... if you'd like to discuss your specific challenges privately, I'm happy to continue the conversation.</em>")</li>
+                    </ul>
+                </li>
+                
+                <li><strong>Analyse and Optimise Performance</strong>
+                    <ul>
+                        <li><strong>Email:</strong> A/B test subject lines, sending times, and personalisation levels to improve engagement.</li>
+                        <li><strong>Conversations:</strong> Review call recordings (Fireflies.ai) to identify successful questioning techniques, objection handling, and transition timing.</li>
+                        <li>Continuously refine all messaging based on this real-world data.</li>
+                    </ul>
+                </li>
+                
+                <li><strong>Master the "Natural Transition"</strong>
+                    <ul>
+                        <li><strong>Identify Buying Signals:</strong> Listen for phrases like, "<em>We've tried everything,</em>" "<em>Our current systems are failing,</em>" or "<em>Competitors are ahead.</em>"</li>
+                        <li><strong>Develop Transition Messaging:</strong> Create the pivot script: "<em>Based on our conversation, FraudOps specifically addresses that [disconnected intelligence systems] challenge you mentioned. Would a brief demo showing how Zurich solved that be valuable?</em>"</li>
+                        <li>Create nurture sequences (e.g., quarterly benchmark updates) for prospects not ready to buy.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
         
         <h5>Month 2 Milestone</h5>
         
@@ -1686,45 +1761,47 @@ h5 { font-size: 1.1rem; font-weight: 700; }
     <div class="section-content">
         <h5>Key Actions</h5>
         
-        <ol>
-            <li><strong>Execute Strategic Discovery Conversations</strong>
-                <ul>
-                    <li><strong>Map Stakeholders:</strong> In your sales calls, identify the economic buyer (Head of Claims), champion (SIU Manager), technical buyer (IT), and potential blockers.</li>
-                    <li><strong>Assess Tech Stack:</strong> Understand their current claims system (Guidewire, Duck Creek, etc.), detection tools (FRISS, Verisk), and intelligence sources.</li>
-                    <li><strong>Qualify:</strong> Define budget, urgency, and clear next steps (e.g., proposal, pilot).</li>
-                </ul>
-            </li>
-            
-            <li><strong>Develop and Publish Authority Content</strong>
-                <ul>
-                    <li><strong>The Report:</strong> Compile findings into the <strong>"State of UK SIU Operations 2025"</strong> report, featuring benchmarks, technology adoption patterns, and recovery metrics.</li>
-                    <li><strong>LinkedIn Content:</strong> Create weekly posts sharing key insights (e.g., "<em>75% of SIU teams still use Excel—here's why modern platforms deliver 40% efficiency gains.</em>").</li>
-                    <li><strong>Assets:</strong> Create an expanded Zurich case study and pitch articles to publications like <em>Insurance Times</em>.</li>
-                </ul>
-            </li>
-            
-            <li><strong>Assess Performance and Calculate ROI</strong>
-                <ul>
-                    <li><strong>Track Funnel Metrics:</strong>
-                        <ul>
-                            <li>Research Conversations: <strong>8-10/month</strong> (vs. 0-2 historically)</li>
-                            <li>Sales Conversations: <strong>3-5/month</strong></li>
-                            <li>Qualified Opportunities: <strong>6+/quarter</strong></li>
-                            <li>Pipeline Value: <strong>£1.05M+/quarter</strong></li>
-                        </ul>
-                    </li>
-                    <li><strong>Identify Success Patterns:</strong> Which segments, roles, and pain points convert best? Which messaging had the highest engagement?</li>
-                </ul>
-            </li>
-            
-            <li><strong>Develop the Scaling Strategy</strong>
-                <ul>
-                    <li>Double down on what works (best messages, segments, tactics).</li>
-                    <li>Plan for modest, manageable expansion into new segments (e.g., TPAs, specialist insurers) without overwhelming the founder.</li>
-                    <li>Assess resource needs: Is the current founder-led model sustainable, or will a dedicated sales resource be needed to scale beyond the £1M target?</li>
-                </ul>
-            </li>
-        </ol>
+        <div class="action-section">
+            <ol>
+                <li><strong>Execute Strategic Discovery Conversations</strong>
+                    <ul>
+                        <li><strong>Map Stakeholders:</strong> In your sales calls, identify the economic buyer (Head of Claims), champion (SIU Manager), technical buyer (IT), and potential blockers.</li>
+                        <li><strong>Assess Tech Stack:</strong> Understand their current claims system (Guidewire, Duck Creek, etc.), detection tools (FRISS, Verisk), and intelligence sources.</li>
+                        <li><strong>Qualify:</strong> Define budget, urgency, and clear next steps (e.g., proposal, pilot).</li>
+                    </ul>
+                </li>
+                
+                <li><strong>Develop and Publish Authority Content</strong>
+                    <ul>
+                        <li><strong>The Report:</strong> Compile findings into the <strong>"State of UK SIU Operations 2025"</strong> report, featuring benchmarks, technology adoption patterns, and recovery metrics.</li>
+                        <li><strong>LinkedIn Content:</strong> Create weekly posts sharing key insights (e.g., "<em>75% of SIU teams still use Excel—here's why modern platforms deliver 40% efficiency gains.</em>").</li>
+                        <li><strong>Assets:</strong> Create an expanded Zurich case study and pitch articles to publications like <em>Insurance Times</em>.</li>
+                    </ul>
+                </li>
+                
+                <li><strong>Assess Performance and Calculate ROI</strong>
+                    <ul>
+                        <li><strong>Track Funnel Metrics:</strong>
+                            <ul>
+                                <li>Research Conversations: <strong>8-10/month</strong> (vs. 0-2 historically)</li>
+                                <li>Sales Conversations: <strong>3-5/month</strong></li>
+                                <li>Qualified Opportunities: <strong>6+/quarter</strong></li>
+                                <li>Pipeline Value: <strong>£1.05M+/quarter</strong></li>
+                            </ul>
+                        </li>
+                        <li><strong>Identify Success Patterns:</strong> Which segments, roles, and pain points convert best? Which messaging had the highest engagement?</li>
+                    </ul>
+                </li>
+                
+                <li><strong>Develop the Scaling Strategy</strong>
+                    <ul>
+                        <li>Double down on what works (best messages, segments, tactics).</li>
+                        <li>Plan for modest, manageable expansion into new segments (e.g., TPAs, specialist insurers) without overwhelming the founder.</li>
+                        <li>Assess resource needs: Is the current founder-led model sustainable, or will a dedicated sales resource be needed to scale beyond the £1M target?</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
         
         <h5>Month 3 Milestone</h5>
         
@@ -1920,7 +1997,9 @@ h5 { font-size: 1.1rem; font-weight: 700; }
         
         <p><strong>Implementation Ease:</strong> Dual deployment model—standalone operational within days delivering immediate workflow value, complete integration <strong>6-8 weeks versus competitors' 12-18 month implementations</strong>—combined with Toolagen services handling technical complexity eliminates implementation fear paralysing enterprise software adoption. This speed and support advantage transforms high-barrier technology deployment into low-risk evaluation opportunity, accelerating sales cycles whilst protecting premium pricing through dramatically reduced implementation risk perception.</p>
         
-        <p>This triple advantage creates sustainable competitive separation that feature-focused or price-competing platforms cannot replicate without years establishing equivalent domain credibility, client validation, and services capability.</p>
+        <div class="highlight-box">
+            <p><strong>This triple advantage creates sustainable competitive separation that feature-focused or price-competing platforms cannot replicate without years establishing equivalent domain credibility, client validation, and services capability.</strong></p>
+        </div>
     </div>
     
     <img src="https://cdn.prod.website-files.com/65c64b03c008e6b284926e9d/68fa60217646e66d6f436ede_Asset%204%404x.png" alt="Logo" class="page-logo">
